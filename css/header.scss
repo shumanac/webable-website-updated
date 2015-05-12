@@ -1,0 +1,343 @@
+.top-bar{
+    background-color: transparent;
+}
+
+.logo{
+    margin-left:3%;
+    margin-top: 1.1%;
+}
+.menu {
+cursor: pointer;
+z-index: 1000;
+position: absolute;
+-webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-moz-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-ms-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-o-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+ 
+}
+
+
+.cd-primary-nav-trigger {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  margin-left:91.6%;
+  margin-top: 1.1%;
+}
+.nav {
+/*margin-top: 3.1%;
+margin-left: 3%;*/
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+cursor: pointer;
+border: none;
+position: relative;
+}
+
+.nav .icon-container {
+width: 93px;
+position: absolute;
+/*top: 10px;*/
+/*right: 0;*/
+cursor: pointer;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.nav .line {
+position: absolute;
+left: 65px;
+right: 28px;
+height: 4px;
+background-color: #0079dd;
+-webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-moz-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-ms-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-o-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+.active .nav .line {
+left: 28px;
+}
+.cd-primary-nav-trigger.nav .line01  {
+top: 0;
+opacity: 1;
+-webkit-transition-delay: 210ms;
+-moz-transition-delay: 210ms;
+-ms-transition-delay: 210ms;
+-o-transition-delay: 210ms;
+transition-delay: 210ms;
+position: relative;
+/*left: 70%;*/
+bottom: auto;
+right: auto;
+width: 27px;
+height: 3px;
+background-color: #0079dd;
+cursor: pointer;
+-webkit-transition: background-color 0.3s;
+-moz-transition: background-color 0.3s;
+transition: background-color 0.3s;
+transition-delay: 210ms;
+transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+.cd-primary-nav-trigger .nav .line02 {
+top: 7px;
+-webkit-transition-delay: 140ms;
+-moz-transition-delay: 140ms;
+-ms-transition-delay: 140ms;
+-o-transition-delay: 140ms;
+transition-delay: 140ms;
+}
+.cd-primary-nav-trigger .nav .line03 {
+top: 14px;
+-webkit-transition-delay: 70ms;
+-moz-transition-delay: 70ms;
+-ms-transition-delay: 70ms;
+-o-transition-delay: 70ms;
+transition-delay: 70ms;
+}
+.cd-primary-nav-trigger .nav .line04 {
+top: 21px;
+opacity: 0;
+-webkit-transition-delay: 0ms;
+-moz-transition-delay: 0ms;
+-ms-transition-delay: 0ms;
+-o-transition-delay: 0ms;
+transition-delay: 0ms;
+}
+.cd-primary-nav-trigger .nav:hover .line {
+-webkit-transform:translate3d(0,-7px,0);
+-moz-transform:translate3d(0,-7px,0);
+-ms-transform:translate3d(0,-7px,0);
+-o-transform:translate3d(0,-7px,0);
+transform:translate3d(0,-7px,0);
+}
+
+.cd-primary-nav-trigger .nav:hover .line01 {
+opacity:0;
+-webkit-transition-delay:0;
+-moz-transition-delay:0;
+-ms-transition-delay:0;
+-o-transition-delay:0;
+transition-delay:0;
+}
+
+.cd-primary-nav-trigger .nav:hover .line02 {
+-webkit-transition-delay:70ms;
+-moz-transition-delay:70ms;
+-ms-transition-delay:70ms;
+-o-transition-delay:70ms;
+transition-delay:70ms;
+}
+
+.cd-primary-nav-trigger.nav:hover .line03 {
+-webkit-transition-delay:140ms;
+-moz-transition-delay:140ms;
+-ms-transition-delay:140ms;
+-o-transition-delay:140ms;
+transition-delay:140ms;
+}
+
+.cd-primary-nav-trigger .nav:hover .line04 {
+opacity:1;
+-webkit-transition-delay:210ms;
+-moz-transition-delay:210ms;
+-ms-transition-delay:210ms;
+-o-transition-delay:210ms;
+transition-delay:210ms;
+}
+.cd-primary-nav-trigger .icon-container.is-clicked {
+  background-color: transparent;
+
+}
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+}
+
+
+
+.cd-primary-nav ul {
+  width: 100%;
+  left: 0;
+  margin: 3.5vw 0 0 1vw;
+}
+.cd-primary-nav li {
+  list-style-type: none;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: "museo_sans900";
+  font-weight: 500;
+  display: table;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 8px -17px;
+  width: 100vw;
+  vertical-align: middle;
+  
+  
+}
+.cd-primary-nav a {
+  color: #fff;
+ 
+}
+ .cd-primary-nav ul a:hover {
+  background-color: #fff;
+  width: 100vw;
+  color: #0079dd;
+  display: inline-block;
+}
+
+
+.cd-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.top-bar.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+background-color:  #002a67 solid;
+  }
+
+  .cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  top: 0;
+  margin-left: 0px;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(left,#00003b, #0079dd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,#00003b, #0079dd); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,#00003b, #0079dd); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,#00003b, #0079dd); /* Standard syntax */
+  z-index: 1000;
+  text-align: center;
+  padding: 50px 0;
+  opacity: .95;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.cd-primary-nav.is-visible{
+  -webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+.icon-container.is-clicked .line:nth-child(3) {
+   top: 31px;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.icon-container.is-clicked .line:nth-child(1){
+   top: 31px;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.cd-primary-nav ul {
+  width: 100%;
+  left: 0;
+  margin: 2vw 0 0 0;
+}
+.cd-primary-nav li {
+  list-style-type: none;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: "museo_sans900";
+  font-weight: 500;
+  display: table;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 8px -17px;
+  width: 100vw;
+  vertical-align: middle;
+  
+  
+}
+.cd-primary-nav a {
+  color: #fff;
+ 
+}
+ .cd-primary-nav ul a:hover {
+  background-color: #fff;
+  width: 100vw!important;
+  color: #0079dd;
+  display: inline-block;
+}
+
+
+.cd-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
